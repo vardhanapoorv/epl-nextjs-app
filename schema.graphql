@@ -1,0 +1,34 @@
+type Player {
+  id: ID!
+  name: String! @search(by: [fulltext])
+  position: Position @search
+  overall: Int
+  club: Club
+  country: Country
+}
+
+enum Position {
+  GK
+  RB
+  LB
+  CB
+  DM
+  CM
+  LM
+  RM
+  CF
+  ST
+}
+
+type Club {
+  id: ID!
+  name: String!
+  league: String
+  stadium: String
+}
+
+type Country {
+  id: ID!
+  name: String!
+  stadium: String
+}
