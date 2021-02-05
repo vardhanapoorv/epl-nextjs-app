@@ -61,7 +61,7 @@ function EPLTable({ data }) {
 export async function getServerSideProps() {
   // Fetch data from external API
   const res = await fetch(
-    `https://apiv2.apifootball.com/?action=get_standings&league_id=148&APIkey=YOUR-API-KEY`
+    `https://apiv2.apifootball.com/?action=get_standings&league_id=148&APIkey=YOUR-API-KEY` // Add your apifootball API key
   );
   const data = await res.json();
 

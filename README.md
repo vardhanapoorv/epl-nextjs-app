@@ -2,6 +2,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+This app was created for [Building a Next.js App with Apollo Client & Slash GraphQL](https://www.apollographql.com/blog/building-a-next-js-app-with-apollo-client-slash-graphql/) blog.
+
+Open `lib/apolloClient.js` and add your Slash GraphQL endpoint.  
+Open `pages/table.js` and add your API key for [apifootball](https://apifootball.com), if you want to view the EPL table.
+
 First, run the development server:
 
 ```bash
